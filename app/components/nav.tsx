@@ -4,11 +4,11 @@ const navItems = {
   '/': {
     name: 'home',
   },
-  '/blog': {
-    name: 'blog',
+  '/projects': {
+    name: 'projects',
   },
-  'https://vercel.com/templates/next.js/portfolio-starter-kit': {
-    name: 'deploy',
+  '/fun': {
+    name: 'fun',
   },
 }
 
@@ -32,6 +32,13 @@ export function Navbar() {
                 </Link>
               )
             })}
+            <Link
+              href="/assets/Hao-Yen_Tang_CV.pdf"
+              className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+              download
+            >
+              resume
+            </Link>
           </div>
         </nav>
       </div>
