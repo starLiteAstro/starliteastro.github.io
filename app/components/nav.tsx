@@ -7,8 +7,8 @@ const navItems = {
   '/projects': {
     name: 'projects',
   },
-  '/fun': {
-    name: 'fun',
+  '/assets/Hao-Yen_Tang_CV.pdf': {
+    name: 'resume',
   },
 }
 
@@ -27,18 +27,13 @@ export function Navbar() {
                   key={path}
                   href={path}
                   className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+                  // If resume, add download attribute
+                  {...(name === 'resume' ? { download: true } : {})}
                 >
                   {name}
                 </Link>
               )
             })}
-            <Link
-              href="/assets/Hao-Yen_Tang_CV.pdf"
-              className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
-              download
-            >
-              resume
-            </Link>
           </div>
         </nav>
       </div>
