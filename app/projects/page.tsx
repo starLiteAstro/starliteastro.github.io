@@ -51,7 +51,7 @@ export default function ProjectsPage() {
               Pong Clone
             </a>
             <p className="text-neutral-300">
-              A Pong game clone built with HTML, CSS, and JavaScript. Playable in the browser.
+              A Pong game clone built with HTML5 Canvas, CSS and JavaScript. Playable in the browser.
             </p>
           </div>
           <h1 className="mb-8 text-2xl font-semibold tracking-tighter">GitHub projects</h1>
